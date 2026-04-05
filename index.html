@@ -7,7 +7,6 @@
   <meta name="description" content="The break room for all of healthcare. No corporate spin. No toxic positivity. Real voices. Real medicine. No filter.">
   <meta property="og:title" content="Stat Society | Scrubs On. Filter Off.">
   <meta property="og:description" content="The break room for all of healthcare. Unfiltered. Anonymous. Always on the side of the workers.">
-  <meta property="og:image" content="assets/images/og-image.png">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" type="image/png" href="assets/icons/logo-round.png">
@@ -29,6 +28,7 @@
     </div>
     <div class="nav-links">
       <a href="#vault">The Vault</a>
+      <a href="#articles">Articles</a>
       <a href="#podcast">Podcast</a>
       <a href="#community">Community</a>
       <a href="#newsletter">Newsletter</a>
@@ -62,49 +62,20 @@
           <button class="cta-ghost" onclick="document.getElementById('newsletter').scrollIntoView({behavior:'smooth'})">Join The Resistance</button>
         </div>
         <div class="hero-nums">
-          <div class="hnum">
-            <div class="hnum-n">50K+</div>
-            <div class="hnum-l">Workers</div>
-          </div>
-          <div class="hnum">
-            <div class="hnum-n" id="confession-hero-count">12,847</div>
-            <div class="hnum-l">Confessions</div>
-          </div>
-          <div class="hnum">
-            <div class="hnum-n">100%</div>
-            <div class="hnum-l">Anonymous</div>
-          </div>
+          <div class="hnum"><div class="hnum-n">50K+</div><div class="hnum-l">Workers</div></div>
+          <div class="hnum"><div class="hnum-n" id="confession-hero-count">12,847</div><div class="hnum-l">Confessions</div></div>
+          <div class="hnum"><div class="hnum-n">100%</div><div class="hnum-l">Anonymous</div></div>
         </div>
       </div>
-
       <div class="hero-right">
         <div class="mascot-bg">
           <div class="mascot-grid-overlay"></div>
-          <div class="corner cm-tl"></div>
-          <div class="corner cm-tr"></div>
-          <div class="corner cm-bl"></div>
-          <div class="corner cm-br"></div>
-
-          <!-- MASCOT IMAGES — swap src when assets ready -->
+          <div class="corner cm-tl"></div><div class="corner cm-tr"></div>
+          <div class="corner cm-bl"></div><div class="corner cm-br"></div>
           <div class="mascot-slots">
-            <div class="mslot" id="slot-drblue">
-              <img src="assets/images/dr-blue.jpg" alt="Dr. Blue" style="width:100%;height:100%;object-fit:cover;object-position:center top;">
-              
-                
-                
-                
-              </div>
-            </div>
-            <div class="mslot" id="slot-drbeard">
-              <img src="assets/images/dr-beard.jpg" alt="Dr. Beard" style="width:100%;height:100%;object-fit:cover;object-position:center top;">
-              
-                
-                
-                
-              </div>
-            </div>
+            <div class="mslot"><img src="assets/images/dr-blue.jpg" alt="Dr. Blue"></div>
+            <div class="mslot"><img src="assets/images/dr-beard.jpg" alt="Dr. Beard"></div>
           </div>
-
           <div class="mstat mstat-tl">
             <div class="mstat-l">Burnout Rate</div>
             <div class="mstat-v orange">67%</div>
@@ -131,7 +102,6 @@
       <span class="ti">Now Podcasting</span><span class="ti sep">●</span>
       <span class="ti teal">Fresh From The Floor</span><span class="ti sep">●</span>
       <span class="ti hot">Scrubs On. Filter Off.</span><span class="ti sep">●</span>
-      <!-- duplicated for seamless loop -->
       <span class="ti">Healthcare Unfiltered</span><span class="ti sep">●</span>
       <span class="ti hot">Scrubs On. Filter Off.</span><span class="ti sep">●</span>
       <span class="ti">We Found It This Way</span><span class="ti sep">●</span>
@@ -147,26 +117,10 @@
 
   <!-- STATS BAR -->
   <div class="stats-row">
-    <div class="scell">
-      <div class="sn orange" id="stat-confessions">12,847</div>
-      <div class="sl">Confessions</div>
-      <div class="sd teal">↑ 47 today</div>
-    </div>
-    <div class="scell alt">
-      <div class="sn">50K+</div>
-      <div class="sl">Workers</div>
-      <div class="sd muted">Growing daily</div>
-    </div>
-    <div class="scell">
-      <div class="sn teal">23</div>
-      <div class="sl">Roles Represented</div>
-      <div class="sd muted">Across all of healthcare</div>
-    </div>
-    <div class="scell alt">
-      <div class="sn">50K+</div>
-      <div class="sl">Monthly Listens</div>
-      <div class="sd teal">↑ Podcast growing</div>
-    </div>
+    <div class="scell"><div class="sn orange" id="stat-confessions">12,847</div><div class="sl">Confessions</div><div class="sd teal">↑ Fresh daily</div></div>
+    <div class="scell alt"><div class="sn">50K+</div><div class="sl">Workers</div><div class="sd muted">Growing daily</div></div>
+    <div class="scell"><div class="sn teal">23</div><div class="sl">Roles Represented</div><div class="sd muted">Across all of healthcare</div></div>
+    <div class="scell alt"><div class="sn">50K+</div><div class="sl">Monthly Listens</div><div class="sd teal">↑ Podcast growing</div></div>
   </div>
 
   <!-- CONFESSIONS VAULT -->
@@ -177,12 +131,8 @@
           <div class="sec-title">The Vault <em>Is Open</em></div>
           <div class="sec-sub">Real stories. No names. No HR consequences.</div>
         </div>
-        <div class="fresh-tag">
-          <div class="fresh-dot"></div>
-          Fresh From The Floor
-        </div>
+        <div class="fresh-tag"><div class="fresh-dot"></div>Fresh From The Floor</div>
       </div>
-
       <div class="filters" id="filters">
         <button class="fb on" onclick="filterConfessions(this,'all')">All</button>
         <button class="fb" onclick="filterConfessions(this,'rn')">RNs</button>
@@ -191,58 +141,76 @@
         <button class="fb" onclick="filterConfessions(this,'burnout')">Burnout</button>
         <button class="fb" onclick="filterConfessions(this,'admin')">Admin Fails</button>
       </div>
-
-      <!-- Loading state -->
       <div id="confessions-loading" class="loading-state">
         <div class="loading-dots"><span></span><span></span><span></span></div>
         <p>Loading from the floor...</p>
       </div>
-
       <div class="cgrid" id="confessions-grid"></div>
       <button class="load-more-btn" id="load-more" onclick="loadMore()" style="display:none;">Load More Confessions ↓</button>
     </div>
   </section>
+
+  <!-- ARTICLES -->
+  <section class="articles-section" id="articles">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <div class="sec-title">From <em>The Floor</em></div>
+          <div class="sec-sub">Opinion. Analysis. The stuff they don't want you reading.</div>
+        </div>
+        <div class="fresh-tag"><div class="fresh-dot"></div>New Articles</div>
+      </div>
+      <div id="articles-loading" class="loading-state">
+        <div class="loading-dots"><span></span><span></span><span></span></div>
+        <p>Loading articles...</p>
+      </div>
+      <div class="articles-grid" id="articles-grid"></div>
+    </div>
+  </section>
+
+  <!-- ARTICLE MODAL -->
+  <div class="article-modal-overlay" id="article-modal" onclick="closeArticleModal(event)">
+    <div class="article-modal">
+      <button class="article-modal-close" onclick="closeArticleModal()">✕</button>
+      <div class="article-modal-tag" id="modal-tag"></div>
+      <div class="article-modal-title" id="modal-title"></div>
+      <div class="article-modal-meta" id="modal-meta"></div>
+      <div class="article-modal-body" id="modal-body"></div>
+    </div>
+  </div>
 
   <!-- PODCAST -->
   <section class="pod-section" id="podcast">
     <div class="pod-inner">
       <div class="pod-cover">
         <div class="pod-cover-grid"></div>
-        <div class="pod-tag-txt">Ep. 01 — Now Streaming</div>
-        <div class="pod-play" onclick="showToast('Loading episode 01... 🎧')">
+        <div class="pod-tag-txt">Now Streaming</div>
+        <div class="pod-play" id="pod-play-btn" onclick="togglePlayer()">
           <div class="play-tri"></div>
         </div>
-        <div class="pod-ep-title">The Unfiltered Digital Sanctuary</div>
-        <div class="pod-host-txt">Hosted by Dr. Beard · 24 min</div>
+        <div class="pod-ep-title" id="pod-featured-title">The Unfiltered Digital Sanctuary</div>
+        <div class="pod-host-txt" id="pod-featured-host">Hosted by Dr. Beard</div>
+        <!-- Spotify embed player — swap YOUR_EPISODE_ID -->
+        <div class="pod-player-embed" id="pod-embed" style="display:none;">
+          <iframe id="spotify-embed"
+            src=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy">
+          </iframe>
+        </div>
       </div>
       <div class="pod-right">
-        <div class="pod-eyebrow">
-          <div class="eyebrow-dot"></div>
-          <span>Now Streaming</span>
-        </div>
+        <div class="pod-eyebrow"><div class="eyebrow-dot"></div><span>Now Streaming</span></div>
         <div class="pod-big-title">The Stat Society<br>Podcast</div>
         <div class="pod-sub">Unfiltered conversations about the reality of healthcare work. No HR filter. No corporate speak. Real talk from the trenches.</div>
-        <div class="ep-list">
-          <div class="ep-row">
-            <div class="ep-ic live">▶</div>
-            <div class="ep-info">
-              <div class="ep-n">EP. 01: The Unfiltered Digital Sanctuary</div>
-              <div class="ep-d">Why we built Stat Society and what "no corporate warmth" really means.</div>
-            </div>
-            <div class="ep-dur">24:18</div>
-          </div>
-          <div class="ep-row locked">
-            <div class="ep-ic">🔒</div>
-            <div class="ep-info">
-              <div class="ep-n">EP. 02: Admin vs. Reality (Coming Soon)</div>
-              <div class="ep-d">The $80k wellness initiative that could've hired 3 nurses.</div>
-            </div>
-            <div class="ep-dur">--:--</div>
+        <div class="ep-list" id="episodes-list">
+          <div class="loading-state" style="padding:20px;">
+            <div class="loading-dots"><span></span><span></span><span></span></div>
           </div>
         </div>
         <div class="plat-row">
-          <button class="plat-btn spotify">♫ Spotify</button>
-          <button class="plat-btn apple">🎙 Apple Podcasts</button>
+          <a class="plat-btn spotify" id="spotify-link" href="#" target="_blank">♫ Spotify</a>
+          <a class="plat-btn apple" id="apple-link" href="#" target="_blank">🎙 Apple Podcasts</a>
         </div>
       </div>
     </div>
@@ -258,34 +226,21 @@
         </div>
       </div>
       <div class="comm-grid">
-
-        <!-- X SPACES -->
         <div class="spaces-card">
           <div class="spaces-platform">𝕏 Spaces</div>
           <div class="spaces-title">Live Every<br>Sunday</div>
-          <div class="spaces-sub">Real talk. No filter. No HR. The community decompressing about what actually happened this week — cases, admin fails, wins, vents.</div>
-          <div class="time-chip">
-            <div class="time-dot"></div>
-            <div class="time-txt">Sundays · 8PM PST / 11PM EST</div>
-          </div>
+          <div class="spaces-sub">Real talk. No filter. No HR. The community decompressing about what actually happened this week.</div>
+          <div class="time-chip"><div class="time-dot"></div><div class="time-txt">Sundays · 8PM PST / 11PM EST</div></div>
           <div class="av-row">
             <div class="avs">
-              <div class="av">JD</div>
-              <div class="av">MK</div>
-              <div class="av">RN</div>
-              <div class="av hot">+</div>
+              <div class="av">JD</div><div class="av">MK</div><div class="av">RN</div><div class="av hot">+</div>
             </div>
             <div class="av-txt">142 joined last week</div>
           </div>
           <button class="btn-orange" onclick="showToast('Reminder set — Sundays 8PM PST! 🎙')">Set Reminder →</button>
         </div>
-
-        <!-- NEWSLETTER -->
         <div class="nl-card" id="newsletter">
-          <div class="nl-eyebrow">
-            <div class="nl-dot"></div>
-            Weekly · Every Sunday
-          </div>
+          <div class="nl-eyebrow"><div class="nl-dot"></div>Weekly · Every Sunday</div>
           <div class="nl-title">The Sunday<br>Night <em>Dread</em></div>
           <div class="nl-sub">Top confessions. Hot takes. What the industry doesn't want you saying out loud — delivered before your Monday shift.</div>
           <form class="nl-form" onsubmit="handleNewsletterSubmit(event)">
@@ -294,7 +249,6 @@
           </form>
           <div class="nl-fine">No spam. No corporate warmth. Just the truth.</div>
         </div>
-
       </div>
     </div>
   </section>
@@ -306,7 +260,7 @@
       <div class="ftb-links">
         <a href="https://statsocietyhq.com" target="_blank">statsocietyhq.com</a>
         <a href="https://instagram.com/statsocietyhq" target="_blank">@statsocietyhq</a>
-        <a href="https://reddit.com/r/StatSocietyHQ" target="_blank">r/StatSocietyHQ</a>
+        <a href="https://reddit.com/r/StatSociety" target="_blank">r/StatSociety</a>
       </div>
     </div>
     <div class="footer-inner">
@@ -317,34 +271,29 @@
           <div class="ft-socs">
             <a class="ft-soc" href="https://twitter.com/Statsociet73928" target="_blank">𝕏</a>
             <a class="ft-soc" href="https://instagram.com/statsocietyhq" target="_blank">IG</a>
-            <a class="ft-soc" href="https://reddit.com/r/StatSocietyHQ" target="_blank">r/</a>
+            <a class="ft-soc" href="https://reddit.com/r/StatSociety" target="_blank">r/</a>
             <a class="ft-soc" href="https://facebook.com/profile.php?id=61580589196637" target="_blank">FB</a>
           </div>
         </div>
         <div>
           <div class="ft-col-title">Explore</div>
           <div class="ft-links">
-            <a href="#vault">The Vault</a>
-            <a href="#">Podcast</a>
-            <a href="#">Merch</a>
-            <a href="#">Guidelines</a>
+            <a href="#vault">The Vault</a><a href="#articles">Articles</a>
+            <a href="#podcast">Podcast</a><a href="#">Merch</a>
           </div>
         </div>
         <div>
           <div class="ft-col-title">Community</div>
           <div class="ft-links">
             <a href="#community">X Spaces</a>
-            <a href="https://reddit.com/r/StatSocietyHQ" target="_blank">Reddit</a>
-            <a href="#newsletter">Newsletter</a>
-            <a href="#">Contact</a>
+            <a href="https://reddit.com/r/StatSociety" target="_blank">Reddit</a>
+            <a href="#newsletter">Newsletter</a><a href="#">Contact</a>
           </div>
         </div>
         <div>
           <div class="ft-col-title">Legal</div>
           <div class="ft-links">
-            <a href="#">Privacy</a>
-            <a href="#">Terms</a>
-            <a href="#">Anon Policy</a>
+            <a href="#">Privacy</a><a href="#">Terms</a><a href="#">Anon Policy</a>
           </div>
         </div>
       </div>
@@ -396,10 +345,7 @@
   </div>
 
   <!-- TOAST -->
-  <div id="toast">
-    <div class="toast-check">✓</div>
-    <span id="toast-msg">Done!</span>
-  </div>
+  <div id="toast"><div class="toast-check">✓</div><span id="toast-msg">Done!</span></div>
 
   <script src="js/config.js"></script>
   <script src="js/sheets.js"></script>
